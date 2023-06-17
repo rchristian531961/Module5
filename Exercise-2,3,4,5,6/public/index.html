@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio/Resume">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ray Christian">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-Front-Back</title>
+    <link rel="stylesheet" href="css/myCalc-css.css">
+    <script src="js/myCalc-js.js"></script>
+</head>
+
+<body>
+    
+    <div class="container"> <!--contains the calculator -->
+
+        <div class="calculator"> <!--Calculator and inputs are here-->
+            <div class="display"><!--Display block is here-->
+                <h3 id="myProblem"></h3><!--For text entry from button inputs-->
+            </div>
+
+            <div class="row-container">
+                <input type="button" value="AC" onclick="AC()">
+                <input type="button" value="CE" onclick="CE()">
+                <input type="button" value="*" onclick="myFunction('*')"> 
+           </div>
+
+           <div class="row-container">
+                <input type="button" value="7" onclick="myFunction('7')">
+                <input type="button" value="8" onclick="myFunction('8')">  
+                <input type="button" value="9" onclick="myFunction('9')">
+                <input type="button" value="+" onclick="myFunction('+')">  
+            </div>
+
+            <div class="row-container">
+                <input type="button" value="6" onclick="myFunction('6')">
+                <input type="button" value="7" onclick="myFunction('7')">  
+                <input type="button" value="8" onclick="myFunction('8')">
+                <input type="button" value="-" onclick="myFunction('-')">  
+            </div>
+
+            <div class="row-container">
+                <input type="button" value="5" onclick="myFunction('5')">
+                <input type="button" value="4" onclick="myFunction('4')">  
+                <input type="button" value="3" onclick="myFunction('3')">
+                <input type="button" value="/" onclick="myFunction('/')">  
+            </div>
+            
+            <div class="row-container">
+                <input type="button" value="2" onclick="myFunction('2')">
+                <input type="button" value="1" onclick="myFunction('1')">  
+                <input type="button" value="0" onclick="myFunction('0')">
+                <input type="button" value="+" onclick="myFunction('+')">  
+            </div>
+
+            <div class="row-container">
+                <input type="button" value="00" onclick="myFunction('00')">
+                <input type="button" value="."  onclick="myFunction('.')">
+                <input type="button" value="="  onclick="equals()">
+            </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
